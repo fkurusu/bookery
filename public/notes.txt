@@ -1,0 +1,39 @@
+Notes:
+
+**** Database creation ****
+
+sudo mkdir /usr/local/pgsql
+chown [OS USER] /usr/local/pgsql
+sudo chown [OS USER] /usr/local/pgsql
+initdb -D /usr/local/pgsql/data
+brew services start postgresql
+brew services stop postgresql
+
+rake db:create:all
+
+***************************
+
+******* Migrations *******
+
+bookery😈 $rails g migration create_users
+      invoke  active_record
+      create    db/migrate/20170704231409_create_users.rb
+bookery😈 $rake db:migrate
+
+bookery😈 $rails g migration create_categories
+      invoke  active_record
+      create    db/migrate/20170704234919_create_categories.rb
+bookery😈 $rake db:migrate
+
+bookery😈 $rails g migration create_authors
+      invoke  active_record
+      create    db/migrate/20170705000218_create_authors.rb
+bookery😈 $rake db:migrate
+
+bookery😈 $rails g migration create_books
+bookery😈 $rake db:migrate
+
+http://railsfileupload.herokuapp.com/documents
+
+
+**************************
