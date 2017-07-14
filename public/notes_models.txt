@@ -10,6 +10,7 @@ brew services start postgresql
 brew services stop postgresql
 
 rake db:create:all
+rake db:drop
 
 ***************************
 

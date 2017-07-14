@@ -14,6 +14,7 @@ class CreateBooks < ActiveRecord::Migration
   end
 end
 
+# http://edgeguides.rubyonrails.org/active_record_postgresql.html
 # Usage
 # Book.create title: "Brave New World",
 #             tags: ["fantasy", "fiction"],

@@ -16,9 +16,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Added for the project
-
-gem 'bootstrap-sass'
-gem 'bootstrap-form'
+gem 'haml-rails'
+gem 'bootstrap-sass', '3.1.1.1'
+gem 'bootstrap_form'
 gem 'font-awesome-rails'
 gem 'pg', '0.20'
 gem 'bcrypt'
