@@ -1,0 +1,32 @@
+Install rspec
+
+Gemfile
+  group :test, :development do
+    gem 'rspec-rails'
+  end
+
+bookery😈 $rails g rspec:install
+true (boolean)
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  spec/rails_helper.rb
+bookery😈 $rails g rspec:model user
+      create  spec/models/user_spec.rb
+
+
+Add:
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+
+in rails_helper.rb at the end of the file
+
+
+bookery😈 $rails g rspec:controller users
+  create  spec/controllers/users_controller_spec.rb
+
+

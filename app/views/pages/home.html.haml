@@ -1,9 +1,15 @@
-.margins
-  .jumbotron
-    %h1.text-center BooKur
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    %hr
+.jumbotron
+  %h1.text-center BooKur
+  %hr
+  .row
+    .col-sm-4
+      %p BookUr is introducing a place to whom loves to keep an order with all his/her books and search for them pretty easy.
+    .col-sm-4
+      %p A Little Free Library is a “take a book, return a book” free book exchange. They come in many shapes and sizes, but the most common version is a small wooden box of books. Anyone may take a book or bring a book to share.
+    .col-sm-4
+      %p Little Free Library is a registered nonprofit organization that inspires a love of reading, builds community, and sparks creativity by fostering neighborhood book exchanges around the world. To learn more about us and how this worldwide movement got started
+  
+  %hr
+  - unless signed_in?
     %p.text-center
-      = link_to 'Sign In »', '#', class: 'btn btn-primary btn-lg'
+      = link_to 'Sign In »', sign_in_path, class: 'btn btn-primary btn-lg'

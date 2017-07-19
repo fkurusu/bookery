@@ -9,9 +9,10 @@
     = javascript_include_tag 'application'
   %body
     = render 'shared/header'
-    .container
+    .container.margins
       = render 'shared/messages'
       = yield
-    %footer.text-center
+    %footer.navbar-fixed-bottom.text-center
+      %hr
       &copy 2017 - Bookery by 
-      %span #{link_to 'KURUSU', '#', class: 'myself'}
+      %span #{link_to 'KURUSU', '#', class: 'pendiente'}
